@@ -1,9 +1,7 @@
 #include <stdio.h>
 
 float divisione(float n, float d){
-  float risDiv;
-  risDiv = n/d;
-  return risDiv;
+  return n/d;
 }
 
 int main(){
