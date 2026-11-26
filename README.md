@@ -1,37 +1,21 @@
 # Exerc-cio
 
-Esercitazione di gruppo su Git e GitHub: repository condiviso, branch dedicati, Pull Request e code review.
+Programma in C che esegue la divisione tra due numeri inseriti dall'utente, con controllo del divisore.
 
-## Obiettivo
+## Descrizione
 
-Imparare il flusso di lavoro collaborativo su GitHub:
+`program.c` chiede all'utente un dividendo e un divisore, calcola il quoziente tramite una funzione dedicata e stampa il risultato con due cifre decimali. Se il divisore è zero, il programma segnala che l'operazione è impossibile invece di eseguirla.
 
-- creare un repository e aggiungere un collaboratore
-- aprire una Issue e assegnarla
-- lavorare su un branch dedicato
-- aprire una Pull Request collegata alla Issue
-- fare code review e risolvere i commenti con nuovi commit
+## File
 
-## Ruoli
-
-| Studente | Responsabilità |
+| File | Contenuto |
 | --- | --- |
-| A | Crea il repository, aggiunge il file base su `main`, invita B come collaboratore, revisiona la PR e fa il merge |
-| B | Si assegna la Issue, crea il branch, implementa la modifica, apre la PR e risolve i commenti di review |
+| `program.c` | Sorgente del programma |
+| `README.md` | Questa documentazione |
 
-## Flusso di lavoro
+## Compilazione
 
-### 1. Setup (Studente A)
-
-1. Crea il repository su GitHub e aggiunge un file base su `main`.
-2. Invita Studente B: **Settings → Collaborators → Add people**.
-3. Studente B accetta l'invito dalle notifiche.
-
-### 2. Sviluppo (Studente B)
+Con GCC:
 
 ```bash
-git clone https://github.com/Sapienti-El-Farouki/Exerc-cio.git
-cd Exerc-cio
-git switch main
-git pull
-git switch -c ReadMeModify
+gcc program.c -o program
